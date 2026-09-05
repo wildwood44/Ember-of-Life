@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e24e682edde4bc24cbbf3d00e70a3023
+guid: 38a4d2610329b534993706798abd0800
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1333904035184237465
-    second: min_grass_0
+      213: 1992309604038963826
+    second: track_4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: min_grass_0
+      name: track_4_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2
-        width: 17
-        height: 19
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 764226ae8550d7de0800000000000000
-      internalID: -1333904035184237465
+      spriteID: 2727757770b16ab10800000000000000
+      internalID: 1992309604038963826
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      min_grass_0: -1333904035184237465
+      track_4_0: 1992309604038963826
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

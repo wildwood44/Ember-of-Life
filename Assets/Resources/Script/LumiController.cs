@@ -22,6 +22,10 @@ public class Script : EntityController
             moveDirection.Set(move.x, move.y);
       	    moveDirection.Normalize();
         }
+        Debug.Log("Move X: " + move.x + "  Move Y: " + move.y);
+        animator.SetFloat("Move X", moveDirection.x);
+        animator.SetFloat("Move Y", moveDirection.y);
+        animator.SetFloat("Speed", move.magnitude);
     }
 
     void FixedUpdate()
@@ -33,16 +37,7 @@ public class Script : EntityController
             rigidbody2d.MovePosition(rigidbody2d.position + knockbackDirection * knockbackForce * Time.fixedDeltaTime);
             return;
         }*/
-        
-        rigidbody2d.linearVelocity = new Vector2(move.x, move.y) * speed;
-        //rigidbody2d.MovePosition(rigidbody2d.linearVelocity * Time.fixedDeltaTime);
-        //graphics.transform.localPosition = new Vector3(0, 0, 0);
-    }
-
-    private Vector2 SetPosition(Vector2 input)
-    {
-        float x = input.x - input.y;
-        float y = (input.x + input.y) * 0.5f;
-        return new Vector2(x, y);
+        Vector2 position = (Vector2)rigidbody2d.position + move * speed * Time.deltaTime;
+        rigidbody2d.MovePosition(position);
     }
 }
