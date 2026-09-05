@@ -34,15 +34,10 @@ public class Script : EntityController
             return;
         }*/
         
+        animator.SetFloat("Move X", move.x);
+        animator.SetFloat("Move Y", move.y);
         rigidbody2d.linearVelocity = new Vector2(move.x, move.y) * speed;
         //rigidbody2d.MovePosition(rigidbody2d.linearVelocity * Time.fixedDeltaTime);
         //graphics.transform.localPosition = new Vector3(0, 0, 0);
-    }
-
-    private Vector2 SetPosition(Vector2 input)
-    {
-        float x = input.x - input.y;
-        float y = (input.x + input.y) * 0.5f;
-        return new Vector2(x, y);
     }
 }
